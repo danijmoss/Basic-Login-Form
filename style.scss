@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+   background-image: linear-gradient(
+      to right,
+      rgba(118, 196, 94, 1),
+      rgba(102, 189, 74, 1)
+    );
+}
+
+.form {
+  &__container {
+    padding: 2rem;
+    margin: 10rem auto;
+    max-width: 20rem;
+    
+    @media only screen and (max-width: 900px) {
+      margin: 9rem auto;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      margin: 7rem auto;
+    }
+  }
+  
+  &__registered {
+    color: #aaaaab !important;
+    font-size: .8rem;
+  }
+  
+  &__createAcct {
+    font-size: .8rem;
+  }
+}
+
+.form-control {
+    font-size: .95rem;
+}
+
+::placeholder {
+  color: #aaaaab !important;
+}

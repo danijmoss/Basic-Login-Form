@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Basic Login Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <!-- Form Container Start -->
+          <div class="form form__container bg-white">
+            <!-- Form Start -->
+            <form
+              id="login-form"
+              class="form form__main justify-content-center needs-validation novalidate"
+            >
+              <!-- Username -->
+              <div class="form-group">
+                <label for="inputUsername" class="sr-only">Username</label>
+                <input
+                  type="text"
+                  class="form-control bg-light border border-light rounded-0"
+                  id="inputUsername"
+                  placeholder="username"
+                />
+
+                <!-- Shown if input is empty -->
+                <div id="invalidUsername" class="invalid-feedback"></div>
+              </div>
+
+              <!-- Password -->
+              <div class="form-group">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input
+                  type="password"
+                  class="form-control bg-light border border-light rounded-0"
+                  id="inputPassword"
+                  placeholder="password"
+                />
+
+                <!-- Shown if input is empty -->
+                <div id="invalidPassword" class="invalid-feedback"></div>
+              </div>
+
+              <!-- Login Button -->
+              <button
+                type="submit"
+                id="login"
+                class="btn btn-success btn-block text-uppercase rounded-0 py-2"
+              >
+                Login
+              </button>
+              <p class="text-center py-2">
+                <span class="form form__registered">Not registered?</span>
+                <a href="#" class="form form__createAcct text-success"
+                  >Create an account</a
+                >
+              </p>
+
+              <!-- Shown when login is successful -->
+              <div id="login-success" class="valid-feedback text-center"></div>
+            </form>
+            <!-- Form End -->
+          </div>
+          <!-- Form Container End -->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
