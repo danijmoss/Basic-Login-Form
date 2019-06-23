@@ -43,7 +43,7 @@ body {
   color: #aaaaab !important;
 }
 
-::-ms-input-placeholder {
+::-moz-input-placeholder {
   color: #aaaaab !important;
 }
 
