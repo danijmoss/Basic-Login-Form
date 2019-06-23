@@ -23,7 +23,7 @@ body {
   }
   
   &__registered {
-    color: #aaaaab !important;
+    color: #6d6d6d !important;
     font-size: .8rem;
   }
   
@@ -36,6 +36,19 @@ body {
     font-size: .95rem;
 }
 
+::-webkit-input-placeholder {
+    color: #6d6d6d !important;
+}
+
+::-ms-input-placeholder {
+  color: #6d6d6d !important;
+}
+
 ::placeholder {
-  color: #aaaaab !important;
+  color: #6d6d6d !important;
+}
+
+.btn-success {
+    background-color: #348046;
+    border-color: #348046;
 }
